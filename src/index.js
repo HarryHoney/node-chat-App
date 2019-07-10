@@ -11,7 +11,7 @@ const server = http.createServer(app)//rather then using express server here I a
 //using only me custon made server
 const io = socketio(server)
 const {addUser,removeUser,getUser,getusersInRoom} = require('./utils/users')
-const port=process.env.port||3000;
+const port=process.env.PORT||5000;
 
 const publicdir=path.join(__dirname,'../public')
 app.use(express.static(publicdir))
