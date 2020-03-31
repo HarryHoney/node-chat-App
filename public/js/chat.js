@@ -75,7 +75,7 @@ socket.on('locationMessage',(message)=>{
 })
 
 $messageForm.addEventListener('submit',(e)=>{
-    e.preventDefault()
+    e.preventDefault()//This to prevent the page from reloading
 
     $messageFormButton.setAttribute('disabled','disabled')
 
